@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/* breakpoints normais para dispositivos        width
+
+Ecrãs pequenos: até 600px
+Telemóvel: de 600px a 768px
+Tablet: de 768px a 992px
+PC: de 992px a 1200px
+TV: + de 1200px
+
+
+*/
+
+
+
+
+/*tablet*/
+@media screen and (min-width:768px) and (max-width:992px) {
+    body {
+        background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    }
+
+    section#login {
+        width: 80vw;
+        height: 350px;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 35%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        height: 100%;
+        width: 65%;
+    }
+
+   
+    section#login > div#formulario > h1 {
+    
+        font-size:2em;
+    }
+
+    div#formulario > p {
+        font-size: 1em;
+    }
+}
+
+
+/*pc*/
+@media screen and (min-width:992px) and (max-width:1200px) {
+
+    body {
+        background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    }
+
+    section#login {
+        width: 950px;
+        height: 400px;
+    }
+
+    section#login > div#imagem {
+        float: right;
+        width: 45%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: left;
+        height: 100%;
+        width: 55%;
+    }
+
+    section#login > div#formulario > h1 {
+    
+        font-size:2.2em;
+    }
+    
+    div#formulario > p {
+        font-size: 1.2em;
+    }
+    
+}
+
+/*tv*/
+@media screen and (min-width:1200px) {
+
+    body {
+        background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    }
+
+    section#login {
+        width: 950px;
+    }
+
+    section#login > div#imagem {
+        float: right;
+        width: 45%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: left;
+        height: 100%;
+        width: 55%;
+    }
+
+    section#login > div#formulario > h1 {
+    
+        font-size:2.2em;
+    }
+
+    div#formulario > p {
+        font-size: 1.4em;
+    }
+    
+    
+}
